@@ -30,6 +30,13 @@ public class Controller {
 		return List.of("uno", "due");
 	}
 
+	@GetMapping("/gr")
+	public List<String> getTest2() {
+		System.out.println("GET test2");
+		logger.error("GET test2");
+		return List.of("greet", "ings");
+	}
+	
 	@GetMapping("/all")
 	public List<Entity> getAll() {
 		System.out.println("GET all");
@@ -37,6 +44,7 @@ public class Controller {
 
 		return res;
 	}
+
 
 	@GetMapping("/{id}")
 	Entity getById(@PathVariable String id) {

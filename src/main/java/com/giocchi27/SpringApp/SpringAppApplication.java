@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringAppApplication {
 
 	public static void main(String[] args) {
+		System.out.println("STARTING APPLICATION...");
 		SpringApplication.run(SpringAppApplication.class, args);
 		System.out.println("RequestMapping = (\"api/v1\")");
 	}
